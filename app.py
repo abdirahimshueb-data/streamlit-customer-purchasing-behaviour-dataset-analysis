@@ -10,7 +10,7 @@ from pathlib import Path
 # ============================================================
 
 st.set_page_config(
-    page_title="Customer Purchasing Intelligence",
+    page_title="Customer Purchasing Behaviors Dashboard",
     page_icon="🛍️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -153,7 +153,7 @@ def validate_data(df):
 # 5. SIDEBAR AND FILE UPLOAD
 # ============================================================
 
-st.sidebar.title("🛍️ Customer Intelligence")
+st.sidebar.title("🛍️ Customer Purchasing Behaviors Dashboard")
 st.sidebar.caption("Purchasing behavior analytics")
 
 uploaded_file = st.sidebar.file_uploader(
@@ -176,7 +176,7 @@ try:
     else:
         st.markdown(
             '<div class="main-title">'
-            'Customer Purchasing Intelligence</div>',
+            'Customer Purchasing Behaviors Dashboard</div>',
             unsafe_allow_html=True
         )
 
@@ -225,7 +225,7 @@ original_row_count = len(df)
 
 st.markdown(
     '<div class="main-title">'
-    'Customer Purchasing Intelligence</div>',
+    'Customer Purchasing Behaviors Dashboard</div>',
     unsafe_allow_html=True
 )
 
